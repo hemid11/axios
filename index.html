@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="form">
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="firstName" placeholder="Company Name"><br>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="lastName" placeholder="Contact Name"><br>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="contacttitle" placeholder="Contact Title"><br>
+            </div>
+            <div>
+                <button class="add-remove-btn" onclick="addRow()">add supplier</button>
+            </div>
+        </div>
+        <div id="tableContainer"></div>
+    </div>
+    <table id="booktable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Contact Name</th>
+                <th>Contact Title</th>
+            </tr>
+        </thead>
+        <tbody id="booktableBody"></tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
